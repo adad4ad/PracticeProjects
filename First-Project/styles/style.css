@@ -1,0 +1,67 @@
+/* header */
+.header {
+  display: grid;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 27px;
+  grid-template-columns: 1fr min-content 1fr;
+}
+.header__logo {
+  display: flex;
+  justify-self: start;
+  color: #000;
+  padding-left: 52px;
+  gap: 10px;
+}
+
+.header__menu-list {
+  display: flex;
+  justify-self: center;
+  gap: 77px;
+  list-style: none;
+  color: #000;
+}
+.header__actions-list {
+  display: flex;
+  justify-self: end;
+  list-style: none;
+  padding-right: 100px;
+  padding-top: 5px;
+  gap: 45px;
+}
+.header__logo-image {
+  width: 50px;
+  height: 32px;
+}
+.header__actions-icon {
+  width: 28px;
+  height: 28px;
+}
+.header__logo-name {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.header__menu-link {
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+/* ------------------------------------------------------------------------ */
+/* banner */
+
+/* ------------------------------------------------------------------------ */
+/* assortment */
+
+/* ------------------------------------------------------------------------ */
+/* products */
+
+/* ------------------------------------------------------------------------ */
+/* inspiration */
+
+/* ------------------------------------------------------------------------ */
+/* furniture */
+
+/* ------------------------------------------------------------------------ */
+/* footer */
+
+/* ------------------------------------------------------------------------ */
