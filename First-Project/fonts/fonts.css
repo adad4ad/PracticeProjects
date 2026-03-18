@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./Montserrat-Bold.woff') format('woff');
+    font-weight: 700; /* Это Bold */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./PoppinsBold.woff') format('woff');
+    font-weight: 700; /* Это Bold */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./PoppinsMedium.woff') format('woff');
+    font-weight: 500; /* Это Medium */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./PoppinsRegular.woff') format('woff');
+    font-weight: 400; /* Это Regular */
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('./Poppins-SemiBold.woff') format('woff');
+    font-weight: 600; /* Это SemiBold */
+    font-display: swap;
+}
