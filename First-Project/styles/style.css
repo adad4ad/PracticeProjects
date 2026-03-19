@@ -1,3 +1,18 @@
+/* important values */
+::selection {
+  background-color: #fff788;
+}
+a,
+button {
+  cursor: pointer;
+}
+h2,
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+/* ------------------------------------------------------------------------ */
+
 /* header */
 .header {
   display: grid;
@@ -38,17 +53,62 @@
   height: 28px;
 }
 .header__logo-name {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 .header__menu-link {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
-
 /* ------------------------------------------------------------------------ */
 /* banner */
+.banner {
+  display: flex;
+  background-size: cover;
+  justify-content: flex-end;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/cover_chair.jpg);
+  padding: 105px 55px;
+}
+.banner__background {
+  width: 643px;
+  margin-top: 55px;
+  height: 443px;
+  padding: 62px 43px 39px 37px;
+  background-color: #fff3e3;
+  border-radius: 10px;
+}
 
+.banner__pre-title {
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.banner__title {
+  font-size: 52px;
+  line-height: 65px;
+  font-weight: 700;
+  color: #b88e2f;
+}
+.banner__description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 13px;
+}
+.banner__btn {
+  width: 222px;
+  height: 74px;
+  background-color: #b88e2f;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  margin-top: 50px;
+}
 /* ------------------------------------------------------------------------ */
 /* assortment */
 
