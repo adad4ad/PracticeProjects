@@ -1,3 +1,4 @@
+/* important values */
 *,
 *::before,
 *::after {
@@ -10,6 +11,12 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: rgb(255, 255, 255);
   font-style: normal;
+}
+
+.container {
+  max-width: 1440px; /* Сайт не будет шире 1440 */
+  margin: 0 auto;    /* Центрируем контент */
+  padding: 0 15px;   /* Чтобы текст не лип к краям на мобилках */
 }
 
 h1,
@@ -25,18 +32,31 @@ li,
 blockquote {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 a {
-  list-style: none;
+  cursor: pointer;
   text-decoration: none;
   color: inherit;
 }
 
+ul,
+ol,
+li {
+  list-style: none;
+}
+
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 button {
+  cursor: pointer;
   font: inherit;
 }
+::selection {
+  background-color: #fff788;
+}
+/* ------------------------------------------------------------------------ */
