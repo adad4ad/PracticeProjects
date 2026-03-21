@@ -116,7 +116,7 @@
   font-weight: 400; /* Это Regular */
   color: rgba(102, 102, 102, 1);
 }
-.assortment__content {
+.assortment__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
@@ -137,11 +137,11 @@
 /* ------------------------------------------------------------------------ */
 /* products */
 .products {
-  padding: 56px 102px 69px 102px;
+  padding: 0px 102px 30px;
 }
-.products__text-block {
-  margin-bottom: 32px;
-}
+/* .products__text-block {
+  
+} */
 .products__title {
   font-family: "Poppins";
   font-size: 40px;
@@ -149,11 +149,13 @@
   font-weight: 700; /* Это Bold */
   text-align: center;
 }
+
 .products__assortment {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   list-style: none;
   gap: 32px;
+  margin: 30px 0px;
 }
 
 .products__picture {
@@ -161,34 +163,47 @@
   height: 301px;
 }
 
-.products__info {
-  width: 285px;
+.products__card {
+  max-width: 285px;
+  height: 450px;
   gap: 32px;
-  background-color: rgba(244, 245, 247, 1);
+  background-color: #f4f5f7;
 }
+
 .products__name {
   margin-left: 16px;
   font-family: "Poppins";
+  margin-top: 10px;
   font-size: 24px;
   color: rgba(51, 51, 51, 1);
   font-weight: 600; /* Это SemiBold */
 }
+
 .products__description {
   font-family: "Poppins";
   margin-left: 16px;
-  font-size: 20px;
+
+  font-size: 16px;
   font-weight: 500; /* Это Medium */
   font-size: 16px;
   line-height: 1.5;
   color: rgba(137, 137, 137, 1);
 }
-.products__price {
+.products__card {
+  z-index: 0;
+}
+.product-item__price-box {
+  margin-top: 10px;
+}
+
+.product-item__price {
   margin-left: 16px;
   font-family: "Poppins";
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600; /* Это SemiBold */
 }
+
 .products__discount {
   margin-left: 16px;
   margin-top: 30px;
@@ -199,22 +214,80 @@
   font-weight: 400; /* Это Regular */
   color: rgba(137, 137, 137, 1);
 }
-.products__btn{
+
+.products__btn {
   font-family: "Poppins";
   font-size: 16px;
   line-height: 1.5;
   font-weight: 600; /* Это SemiBold */
   background-color: #fff;
-  border: 1px solid #B88E2F; 
-  outline: none; 
-  color: #B88E2F;
+  border: 1px solid #b88e2f;
+  outline: none;
+  color: #b88e2f;
   display: flex;
   justify-self: center;
   justify-content: center;
   align-items: center;
   width: 245px;
   height: 48px;
-  margin: 32px 597px 69px 598px;
+  margin: -5px 592px 69px 598px;
+}
+
+.overlay {
+  position: relative;
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  transition: 0.2s ease;
+}
+
+.products__actions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Центрируем по середине */
+  z-index: 2;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.products__item:hover::before {
+  background-color: rgba(58, 58, 58, 0.7);
+  cursor: pointer;
+}
+.products__item:hover .products__actions {
+  opacity: 1;
+}
+.btn__actions {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600; /* Это SemiBold */
+  background-color: #fff;
+  border: 1px solid #b88e2f;
+  outline: none;
+  color: #b88e2f;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 202px;
+  height: 48px;
+}
+.actions__btn {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600; /* Это SemiBold */
+  color: #fff;
+}
+.actions__list {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  gap: 24px;
 }
 
 /* ------------------------------------------------------------------------ */

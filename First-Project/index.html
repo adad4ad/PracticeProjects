@@ -68,18 +68,18 @@
         <!---------------------------------section  banner -------------------------------------->
         <section class="banner">
             <div class="banner__content">
-                <div class="container">
-                    <p class="banner__pre-title">New Arrival</p>
-                    <h2 class="banner__title">
-                        Discover Our <br />
-                        New Collection
-                    </h2>
-                    <p class="banner__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut <br />
-                        elit tellus, luctus nec ullamcorper mattis.
-                    </p>
-                    <button class="banner__btn" href="#">Buy Now</button>
-                </div>
+                <p class="banner__pre-title">New Arrival</p>
+                <h2 class="banner__title">
+                    Discover Our <br />
+                    New Collection
+                </h2>
+                <p class="banner__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut <br />
+                    elit tellus, luctus nec ullamcorper mattis.
+                </p>
+                <a href="#">
+                    <button class="banner__btn">Buy Now</button>
+                </a>
             </div>
         </section>
         <!----------------------------------------------------------------------------------------->
@@ -92,18 +92,33 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
             </div>
-            <ul class="assortment__content">
-                <li class="assortment__content-item">
-                    <img src="./images/diningImage.png" alt="Picture Dining" class="assortment__content-picture" />
-                    <h3 class="assortment__name">Dining</h3>
+            <ul class="assortment__list">
+                <li class="assortment__item">
+                    <a href="#" class="assortment__link">
+                        <figure class="assortment__figure">
+                            <img src="./images/diningImage.png" alt="Picture Dining"
+                                class="assortment__content-picture" />
+                            <figcaption class="assortment__name">Dining</figcaption>
+                        </figure>
+                    </a>
                 </li>
-                <li class="assortment__content-item">
-                    <img src="./images/livingImage.png" alt="Picture Living" class="assortment__content-picture" />
-                    <h3 class="assortment__name">Living</h3>
+                <li class="assortment__item">
+                    <a href="#" class="assortment__link">
+                        <figure class="assortment__figure">
+                            <img src="./images/livingImage.png" alt="Picture Living"
+                                class="assortment__content-picture" />
+                            <figcaption class="assortment__name">Living</figcaption>
+                        </figure>
+                    </a>
                 </li>
-                <li class="assortment__content-item">
-                    <img src="./images/bedroomImage.png" alt="Picture Bedroom" class="assortment__content-picture" />
-                    <h3 class="assortment__name">Bedroom</h3>
+                <li class="assortment__item">
+                    <a href="#" class="assortment__link">
+                        <figure class="assortment__figure">
+                            <img src="./images/bedroomImage.png" alt="Picture Bedroom"
+                                class="assortment__content-picture" />
+                            <figcaption class="assortment__name">Bedroom</figcaption>
+                        </figure>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -111,91 +126,340 @@
 
         <!---------------------------------section  products -------------------------------------->
         <section class="products">
-            <div class="products__text-block">
-                <h2 class="products__title">Our Products</h2>
-            </div>
+            <h2 class="products__title">Our Products</h2>
             <div class="products__catalog">
                 <ul class="products__assortment">
-                    <li class="products__item">
-                        <article class="products__info">
+                    <li class="products__item overlay">
+                        <article class="products__card">
                             <img src="./images/Syltherine.png" alt="Picture Syltherine" class="products__picture" />
                             <h3 class="products__name">Syltherine</h3>
                             <p class="products__description">Stylish cafe chair</p>
-                            <span class="products__price">
-                                Rp 2.500.000
-                                <span class="products__discount">Rp 3.500.000</span>
-                            </span>
+                            <article class="product-item__price-box">
+                                <span class="product-item__price">
+                                    Rp 2.500.000
+                                    <span class="products__discount">Rp 3.500.000</span>
+                                </span>
+                            </article>
+                            <!-- block overlay buttons -->
+                            <div class="products__actions">
+                                <a href="#">
+                                    <button class="btn__actions">Add to cart</button>
+                                </a>
+                                <ul class="actions__list">
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/share.png" alt="Share">
+                                            <span class="actions__btn">Share</span>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/compare.png" alt="Compare">
+                                            <span class="actions__btn">Compare</span>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/like.png" alt="Like">
+                                            <span class="actions__btn">Like</span>
+                                        </li>
+                                    </a>
+                                </ul>
+
+                            </div>
+                            <!-- ----------------------------------------->
                         </article>
                     </li>
-                    <li class="products__item">
-                        <article class="products__info">
+                    <li class="products__item overlay">
+                        <article class="products__card">
                             <img src="./images/Leviosa.jpg" alt="Picture Leviosa" class="products__picture" />
                             <h3 class="products__name">Leviosa</h3>
                             <p class="products__description">Stylish cafe chair</p>
-                            <span class="products__price">Rp 2.500.000</span>
+                            <div class="product-item__price-box">
+                                <span class="product-item__price">Rp 2.500.000</span>
+                            </div>
+                            <!-- block overlay buttons -->
+                            <div class="products__actions">
+                                <a href="#">
+                                    <button class="btn__actions">Add to cart</button>
+                                </a>
+                                <ul class="actions__list">
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/share.png" alt="Share">
+                                            <span class="actions__btn">Share</span>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/compare.png" alt="Compare">
+                                            <span class="actions__btn">Compare</span>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/like.png" alt="Like">
+                                            <span class="actions__btn">Like</span>
+
+                                        </li>
+                                    </a>
+                                </ul>
+
+                            </div>
+                            <!-- ----------------------------------------->
                         </article>
                     </li>
-                    <li class="products__item">
-                        <article class="products__info">
+                    <li class="products__item overlay">
+                        <article class="products__card 
+">
                             <img src="./images/Lolito.png" alt="Picture Lolito" class="products__picture" />
                             <h3 class="products__name">Lolito</h3>
                             <p class="products__description">Luxury big sofa</p>
-                            <span class="products__price">
-                                Rp 7.000.000
-                                <span class="products__discount">Rp 14.000.000</span>
-                            </span>
+                            <div class="product-item__price-box">
+                                <span class="product-item__price">
+                                    Rp 7.000.000
+                                    <span class="products__discount">Rp 14.000.000</span>
+                                </span>
+                            </div>
+                            <!-- block overlay buttons -->
+                            <div class="products__actions">
+                                <a href="#">
+                                    <button class="btn__actions">Add to cart</button>
+                                </a>
+                                <ul class="actions__list">
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/share.png" alt="Share">
+                                            <span class="actions__btn">Share</span>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/compare.png" alt="Compare">
+                                            <span class="actions__btn">Compare</span>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/like.png" alt="Like">
+                                            <span class="actions__btn">Like</span>
+
+                                        </li>
+                                    </a>
+                                </ul>
+
+                            </div>
+                            <!-- ----------------------------------------->
                         </article>
                     </li>
-                    <li class="products__item">
-                        <article class="products__info">
+                    <li class="products__item overlay">
+                        <article class="products__card">
                             <img src="./images/Respira.png" alt="Picture Respira" class="products__picture" />
                             <h3 class="products__name">Respira</h3>
                             <p class="products__description">
                                 Outdoor bar table and stool
                             </p>
-                            <span class="products__price">Rp 500.000</span>
+                            <div class="product-item__price-box">
+                                <span class="product-item__price">Rp 500.000</span>
+                            </div>
+                            <!-- block overlay buttons -->
+                            <div class="products__actions">
+                                <a href="#">
+                                    <button class="btn__actions">Add to cart</button>
+                                </a>
+                                <ul class="actions__list">
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/share.png" alt="Share">
+                                            <span class="actions__btn">Share</span>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/compare.png" alt="Compare">
+                                            <span class="actions__btn">Compare</span>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/like.png" alt="Like">
+                                            <span class="actions__btn">Like</span>
+
+                                        </li>
+                                    </a>
+                                </ul>
+
+                            </div>
+                            <!-- ----------------------------------------->
                         </article>
                     </li>
-                    <li class="products__item">
-                        <article class="products__info">
+                    <li class="products__item overlay">
+                        <article class="products__card">
                             <img src="./images/Grifo.png" alt="Picture Grifo" class="products__picture" />
                             <h3 class="products__name">Grifo</h3>
                             <p class="products__description">Night lamp</p>
-                            <span class="products__price">Rp 1.500.000</span>
+                            <div class="product-item__price-box">
+                                <span class="product-item__price">Rp 1.500.000</span>
+                            </div>
+                            <!-- block overlay buttons -->
+                            <div class="products__actions">
+                                <a href="#">
+                                    <button class="btn__actions">Add to cart</button>
+                                </a>
+                                <ul class="actions__list">
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/share.png" alt="Share">
+                                            <span class="actions__btn">Share</span>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/compare.png" alt="Compare">
+                                            <span class="actions__btn">Compare</span>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/like.png" alt="Like">
+                                            <span class="actions__btn">Like</span>
+
+                                        </li>
+                                    </a>
+                                </ul>
+
+                            </div>
+                            <!-- ----------------------------------------->
                         </article>
                     </li>
-                    <li class="products__item">
-                        <article class="products__info">
+                    <li class="products__item overlay">
+                        <article class="products__card">
                             <img src="./images/Muggo.png" alt="Picture Muggo" class="products__picture" />
                             <h3 class="products__name">Muggo</h3>
                             <p class="products__description">Small mug</p>
-                            <span class="products__price">Rp 150.000</span>
+                            <div class="product-item__price-box">
+                                <span class="product-item__price">Rp 150.000</span>
+                            </div>
+                            <!-- block overlay buttons -->
+                            <div class="products__actions">
+                                <a href="#">
+                                    <button class="btn__actions">Add to cart</button>
+                                </a>
+                                <ul class="actions__list">
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/share.png" alt="Share">
+                                            <span class="actions__btn">Share</span>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/compare.png" alt="Compare">
+                                            <span class="actions__btn">Compare</span>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/like.png" alt="Like">
+                                            <span class="actions__btn">Like</span>
+
+                                        </li>
+                                    </a>
+                                </ul>
+
+                            </div>
+                            <!-- ----------------------------------------->
                         </article>
                     </li>
-                    <li class="products__item">
-                        <article class="products__info">
+                    <li class="products__item overlay">
+                        <article class="products__card">
                             <img src="./images/Pingky.png" alt="Picture Pingky" class="products__picture" />
                             <h3 class="products__name">Pingky</h3>
                             <p class="products__description">Cute bed set</p>
-                            <span class="products__price">
-                                Rp 7.000.000<span class="products__discount">
-                                    Rp 14.000.000</span>
-                            </span>
+                            <div class="product-item__price-box">
+                                <span class="product-item__price">
+                                    Rp 7.000.000<span class="products__discount">
+                                        Rp 14.000.000</span>
+                                </span>
+                            </div>
                         </article>
+                        <!-- block overlay buttons -->
+                        <div class="products__actions">
+                            <a href="#">
+                                <button href="#" class="btn__actions">Add to cart</button>
+                            </a>
+                            <ul class="actions__list">
+                                <a href="#">
+                                    <li class="actions__item">
+                                        <img src="./images/share.png" alt="Share">
+                                        <span class="actions__btn">Share</span>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="actions__item">
+                                        <img src="./images/compare.png" alt="Compare">
+                                        <span class="actions__btn">Compare</span>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="actions__item">
+                                        <img src="./images/like.png" alt="Like">
+                                        <span class="actions__btn">Like</span>
+
+                                    </li>
+                                </a>
+                            </ul>
+
+                        </div>
+                        <!-- ----------------------------------------->
                     </li>
-                    <li class="products__item">
-                        <article class="products__info">
+                    <li class="products__item overlay">
+                        <article class="products__card">
                             <img src="./images/Potty.png" alt="Picture Potty" class="products__picture" />
                             <h3 class="products__name">Potty</h3>
                             <p class="products__description">
                                 Minimalist flower pot
                             </p>
-                            <span class="products__price">Rp 500.000</span>
+                            <div class="product-item__price-box">
+                                <span class="product-item__price">Rp 500.000</span>
+                            </div>
+                            <!-- block overlay buttons -->
+                            <div class="products__actions">
+                                <a href="#">
+                                    <button class="btn__actions">Add to cart</button>
+                                </a>
+                                <ul class="actions__list">
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/share.png" alt="Share">
+                                            <span class="actions__btn">Share</span>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/compare.png" alt="Compare">
+                                            <span class="actions__btn">Compare</span>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="actions__item">
+                                            <img src="./images/like.png" alt="Like">
+                                            <span class="actions__btn">Like</span>
+
+                                        </li>
+                                    </a>
+                                </ul>
+
+                            </div>
+                            <!-- ----------------------------------------->
                         </article>
+
                     </li>
                 </ul>
             </div>
-            <button class="products__btn" href="#">Show More</button>
+            <a href="#">
+                <button class="products__btn">Show More</button>
+            </a>
         </section>
         <!-------------------------------------------------------------------------------------------->
 

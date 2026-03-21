@@ -9,15 +9,10 @@ body {
   width: 1440px;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
   font-style: normal;
 }
 
-.container {
-  max-width: 1440px; /* Сайт не будет шире 1440 */
-  margin: 0 auto;    /* Центрируем контент */
-  padding: 0 15px;   /* Чтобы текст не лип к краям на мобилках */
-}
 
 h1,
 h2,
@@ -29,14 +24,16 @@ p,
 ul,
 ol,
 li,
-blockquote {
+blockquote,
+figure,
+figcaption { 
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
-a {
+a, button{
   cursor: pointer;
   text-decoration: none;
   color: inherit;
@@ -52,10 +49,6 @@ img {
   max-width: 100%;
 }
 
-button {
-  cursor: pointer;
-  font: inherit;
-}
 ::selection {
   background-color: #fff788;
 }
